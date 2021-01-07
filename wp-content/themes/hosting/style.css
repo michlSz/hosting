@@ -1,0 +1,292 @@
+body,html {
+	height: 100%;
+	font-family: 'Manrope', sans-serif;
+}
+.btn {
+	transition: all 0.3s ease-in-out;
+}
+
+.card {
+	margin-bottom: 15px;
+}
+
+@media(max-width: 768px){
+	#header {
+		text-align: center;
+	}
+	#social {
+		text-align: center;
+	}
+	#social hr, #who hr{
+		margin: 8% auto;
+	}
+	#who{
+		text-align: center;
+	}
+	#who img {
+		margin-top: 15%;
+	}
+	#work {
+		text-align: center;
+	}
+	#footer{
+		text-align: center;
+	}
+}
+
+
+
+.navbar {
+	background-color: rgba(21,31,33,0.5);
+	border-bottom: 1px solid #dadada;
+	font-family: 'Manrope', sans-serif;
+}
+
+.navbar .navbar-nav .nav-link {
+	color: #d1d1d1;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+	color: #fff
+}
+
+.navbar-toggler-icon {
+	color: #fff;
+}
+
+/*HEADER*/
+
+#header {
+
+	/*background: url('img/stars-bg.jpg') center center no-repeat;*/
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	color: white;
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+}
+
+#header img {
+	padding: 0 0 30px 0;
+	width: 60%;
+}
+
+#header .header-right {
+	background-color: rgba(0,0,0,0.5);
+	padding: 20px;
+	border-radius: 10px;
+}
+
+#header .fa {
+	margin: 5% 0;
+}
+
+#header a .fa {
+	color: #fff;
+}
+
+#header a .fa:hover {
+	color: #ccc;
+}
+
+/*SOCIAL*/
+
+#social {
+	padding: 4.25rem 0;
+}
+
+#social .fa{
+font-size: 1.5em;
+color: #be2835;
+border:2px solid #be2835;
+width: 60px;
+height: 60px;
+border-radius: 30%;
+text-align: center;
+padding:30% 0;
+transition: all 0.4s ease-in-out;
+}
+
+#social .fa:hover{
+	color: #fff;
+	background: #be2835;
+}
+
+/*WHO*/
+
+#who {
+	padding: 5rem 0;
+	background-color: #f6f6f6;
+}
+
+#who .btn-who{
+	background-color: #be2835;
+	color: #fff;
+	width: 50%;
+}
+#who .btn-who:hover{
+	background-color: #fff;
+	color: #be2835;
+	border: 1px solid #be2835;
+}
+
+
+/*WORK*/
+
+#work {
+	padding: 5rem 0;
+}
+
+
+#work .work-img {
+	position: relative;
+}
+
+#work .work-img .img-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	background-image: url("img/eye.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+#work .work-img .img-overlay:hover {
+	opacity: 1;
+	z-index: 1;
+}
+
+
+
+
+
+.dashed-box { 
+  position: relative;
+  z-index: 1;
+  border: dashed;
+  height: 8em;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+
+.gold-box { 
+  position: absolute;
+  z-index: 3; /* put .gold-box above .green-box and .dashed-box */
+  background: gold;
+  width: 80%;
+  left: 60px;
+  top: 3em;
+}
+
+.green-box { 
+  position: absolute;
+  z-index: 2; /* put .green-box above .dashed-box */
+  background: lightgreen;
+  width: 20%;
+  left: 65%;
+  top: -25px;
+  height: 7em;
+  opacity: 0.9;
+}
+
+.green {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background-color: green;
+}
+
+.overlay {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+	background-image: url("img/eye.png");
+	background-position: center center;
+	background-repeat: no-repeat;	
+}
+
+.overlay:hover {
+	background-color: white;
+	opacity: 1;
+}
+
+/*WHY*/
+
+#why {
+	background-color: #f6f6f6;
+	padding: 5em 0;
+}
+
+#why .fa {
+	color: #be2835;
+	padding: 25px 0;
+}
+
+/*CUSTOMERS*/
+
+#customers {
+	padding: 5rem;
+}
+
+
+/*PRICING*/
+
+#pricing {
+	padding: 5rem 0;
+	background-color: #f6f6f6;
+}
+
+#pricing .card .card-header {
+	background-color: #6e6e6e;
+	color: #fff;
+	transition: all 0.2s ease-in-out;
+}
+
+
+#pricing .card .standard {
+	background-color: #be2835;
+	font-size: 1.3em;
+	padding: 15px 0;
+}
+
+#pricing .card .card-header:hover {
+	background-color: #be2835;
+
+}
+
+#pricing .card {
+	margin-top: 20px;
+}
+
+/*CONTACT*/
+
+#contact {
+	padding: 5rem 0;
+}
+
+/*FOOTER*/
+
+#footer {
+	padding: 2rem 0;
+	background-color: #484848;
+	color: #fff;
+}
+
+#footer a {
+	color: #fff;
+}
+
+#footer .fa {
+	padding: 0 5px;
+}
